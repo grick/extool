@@ -1,0 +1,10 @@
+<h1>Home#index</h1>
+<% form_tag :action => 'index' do%>
+	<p>Input URL:</p>
+	<p><%= text_field_tag 'url' %></p>
+	<%= submit_tag 'Extract' %>
+<% end %>
+<dl>
+	<dt>title: <%= @title %></dt>
+	<dt>content: <p><%= @content %></p></dt>
+</dl>
